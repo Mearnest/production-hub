@@ -1,0 +1,44 @@
+style.
+	div.content {
+		border-top: 1px solid gray;
+	}
+	a.ajax, img {
+		display: inline;
+		hegith: 60px;
+	}
+	
+	a.active {
+		border-bottom: 1px solid gold;
+	}
+
+script.
+	$(document).ready(function() {
+		$("a.ajax").click(function(event) {
+			event.preventDefault();
+			var page = $(this).attr("href");
+			console.log(page);
+			return;
+			
+			$("a.ajax").removeClass("active");
+			$(this).addClass("active");
+				
+			/* $.get(page, function(data) {
+				$("div.content").html(data);
+			}); */
+		});
+	});
+
+.container.clearfix
+	
+
+	.content
+		h2 Simply Speaking Video Process
+		h4 Click on each button to go through the process.
+		
+		img(src="/images/source-content.png")
+		
+		img(src="/images/script.png")
+		
+		img(src="/images/visual-brainstorm.png")
+		
+		img(src="/images/storyboard.png")

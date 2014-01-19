@@ -1,0 +1,25 @@
+{
+    "name": "production-hub",
+    "private": true,
+    "version": "0.0.0",
+    "description": "Books for Life lesson bridge / hub",
+    "dependencies": {
+        "sails": "0.9.8",
+        "grunt": "0.4.1",
+        "sails-disk": "~0.9.0",
+        "ejs": "0.8.4",
+        "optimist": "0.3.4",
+		"jade": "*"
+    },
+    "scripts": {
+        "start": "node app.js",
+        "debug": "node debug app.js"
+    },
+    "main": "app.js",
+    "repository": "",
+    "author": "",
+    "license": "",
+	"engines": {
+		"node": "0.10.x"
+	}
+}

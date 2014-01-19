@@ -1,0 +1,52 @@
+extends ../layout
+
+block heads
+	
+block main
+	h1#main-title The Learning Bridge
+	h2 Production Manual
+	p.
+		What if we could educate the world?<br>
+		A teacher to teacher training education program.
+	.steps
+		ul.getting-started
+			li
+				.sprite.one
+				div
+					h3 Get your Lesson going.
+					p Use this manual to understand how you can help make<br> a lesson for empowering others.
+			li
+				.sprite.two
+				div
+					h3 Lift your production.
+					p.
+						Provide the “fulcrum” that will give them the leverage to solve<br>
+						their problems rather than become dependent upon others.
+			li
+				.sprite.three
+				div
+					h3 Dive in and start bulding.
+					img(src="/images/bridge.jpg", style="margin-left: 5px; width:260px")
+
+block sidebar
+	h4#new New to Books for Life?
+	ul
+		li
+			a.ajax(href="/overview/mission") Mission Statement
+		li
+			a.ajax(href="/overview/presentation") View Lesson Prezi
+			
+	h4 Next Steps
+	ul
+		li.sprite.single_page
+			a.ajax(href="/manual/source-content", data-nav-top="/manual/navigation", data-nav-side="remove") Go through the manual
+		li.sprite.traditional
+			a.ajax(href="/lessons/structure", data-nav-side="/lessons/navigation") View example lessons
+		li.sprite.realtime
+			a.ajax(href="/overview/make-lesson") Make a lesson
+		li.sprite.api
+			a.ajax(href="/overview/volunteering") Volunteer
+			
+		div(style="position:absolute; top: 360px; left: 60px;")
+			a.ajax(href="/overview/philosophy", data-nav-side="/overview/navigation") 
+				img(src="/images/overview.png")

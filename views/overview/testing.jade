@@ -1,0 +1,42 @@
+extends ../layout
+
+block head
+
+	style.
+		body {
+		
+		}
+		
+	script.
+		$(document).ready(function() {
+			$("a.ajax").click(function(event) {
+				event.preventDefault();
+				
+				var page = $(this).attr("href");
+				var nav = $(this).attr("data-nav");
+				
+				console.log(page);
+				console.log(nav);
+				
+				$("div.main").fadeOut("slow", function() {
+					console.log("fading out");
+					
+					$.get(page, function(data) {
+						console.log("data received");
+						$("div.main").html(data);
+						
+						$("div.main").fadeIn("slow", function() {
+							console.log("fade in");
+						});
+					});
+				});
+			});
+		});
+
+block body
+	p
+		a.ajax(href="/navigation") Click Me
+		
+	div.main
+		img(src="/images/testing.jpg", style="margin-bottom: 20px;")
+

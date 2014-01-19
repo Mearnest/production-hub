@@ -1,0 +1,25 @@
+extends ../layout.jade
+
+block main
+	//- Includes happen at compile time, so they can't be passed a variable.
+	//- Need to look for an easier solution, probably in the config or controller.
+	case page
+		when "make-lesson"
+			include make-lesson
+		when "mission"
+			include mission
+		when "philosophy"
+			include philosophy
+		when "process"
+			include process
+		when "resources"
+			include resources
+		when "volunteering"
+			include volunteering
+		when "who-we-are"
+			include who-we-are
+		default
+			include ../404
+			
+block sidebar
+	include navigation

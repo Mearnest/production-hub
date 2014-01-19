@@ -1,0 +1,37 @@
+extends ../layout.jade
+
+block main
+	//- Includes happen at compile time, so they can't be passed a variable.
+	//- Need to look for an easier solution, probably in the config or controller.
+	case page
+		when "video-recording"
+			include video-recording
+		when "audio-recording"
+			include audio-recording
+		when "audio-editing"
+			include audio-editing
+		when "photo-use"
+			include photo-use
+		when "stickposer-use"
+			include stickposer-use
+		when "guidelines"
+			include guidelines
+		when "powerpoint"
+			include powerpoint
+		when "stickposer"
+			include stickposer
+		when "svg-editor"
+			include svg-editor
+		when "photos"
+			include photos
+		when "other"
+			include other
+		when "using-cellphone"
+			include using-cellphone
+		when "audacity"
+			include audacity
+		default
+			include ../404
+
+block sidebar
+	include navigation

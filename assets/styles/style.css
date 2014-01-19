@@ -1,0 +1,156 @@
+html, body {
+	height: 100%;
+	font-family:"Open Sans", Arial, sans-serif;font-weight:300;font-size:15px;
+}
+
+h1{
+	color:#0c8da0;
+	font-size:2em;
+	font-weight:300;
+	margin-top: 5px;
+}
+h2{
+	font-size:1.5em;
+	font-weight:300;
+	margin-top:4%
+}
+h3{
+	font-size:1.25em;
+	font-weight:300;
+	font-style:italic;
+	margin-bottom:5px
+}
+h4{
+	color:#0c8da0;
+	font-weight:300;
+	font-size:1.5em
+}
+
+h2.title {
+	color:#0c8da0;
+}
+
+li{list-style:none}
+ul{margin-top:5%;margin-bottom:5%}
+
+a{text-decoration:none;color:inherit}
+a:hover {
+	
+}
+
+p{margin-bottom:7px;font-size:.9em}
+.sprite{
+	font-weight: normal;
+	background:url(/images/newapp.sprite.png) no-repeat;
+}
+
+.steps{
+	height:250px;
+}
+
+.getting-started div h3 {
+	padding: 0; margin: 4px 0;
+	height: 20px;
+}
+
+.getting-started p{ margin-bottom: 30px; line-height: 26px; }
+.getting-started div{float:left;width:540px; margin:0; padding:0;}
+.getting-started li{clear:both;height:60px;margin-top:20px;margin-bottom:20px;}
+.getting-started .sprite{margin-left:10px;padding-left:60px;height:42px;width:0;}
+.getting-started .one{background-position:0 0;}
+.getting-started .two{background-position:0 -42px;}
+.getting-started .three{background-position:0 -83px;}
+
+.sidebar ul{margin-bottom:10%;}
+.sidebar ul li{margin-top:5px;margin-bottom:.25em;}
+.sidebar ul li a{margin-bottom:.25em;}
+.sidebar .sprite{padding-left:25px;}
+.sidebar .single_page{background-position:0 -199px;}
+.sidebar .traditional{background-position:0 -219px;}
+.sidebar .realtime{background-position:0 -179px;}
+.sidebar .api{background-position:0 -158px;}
+
+.boxy{
+	font-family:Courier, "Courier New", sans-serif;
+	background-color:#e4edec;
+	border:1px solid #d0d6d6;
+	padding: 2px 5px;
+	font-weight:100;
+}
+
+div.top-bar {
+	height: 60px;
+	width: 100%;
+	background: #0FB0AA;
+}
+
+div.top-bar .container {
+	padding: 5px 15px;
+}
+
+div.top-nav {
+	margin: 14px 0 0;
+	height: 50px;
+	xborder 1px dashed;
+}
+
+div.main {
+	xborder: 1px solid blue;
+}
+
+div.sidebar {
+	border-left: 1px solid;
+}
+
+div.container.content {
+	height: 80%;
+	xborder: 1px dashed red;
+}
+
+div.col-md-1, .col-md-4, .col-md-8 {
+	xborder: 1px solid;
+}
+
+img.process {
+	display: inline;
+	height: 46px;
+}
+
+a img.process:hover, a img.process.active {
+	background-color: gold;
+}
+
+aside {
+	background-color: #4F81BD;
+	color: #fff;
+	padding: 5px;
+	border: 1px solid;
+}
+
+ul.binary li {
+	list-style-type: binary;
+}
+
+ul.special1 li {
+	list-style-type: ethiopic-abegede-am-et;
+}
+
+ul.special2 li {
+	list-style-type: asterisks;
+}
+
+iframe.video {
+	margin: 20px 50px;
+}
+
+div.footer {
+	position: absolute;
+	bottom: 0;
+	height: 120px;
+	width: 100%;
+	background-image: url('/images/footer.png');
+}
+
+span {
+	font-weight: 700;
+}

@@ -1,0 +1,22 @@
+.steps(style="margin-top: 10px")
+	ul.getting-started
+		li
+			h4.one
+				a.ajax(class="active", href="/overview/philosophy", data-title="Philosophy", tabindex="1") Philosophy
+		li
+			h4.two
+				a.ajax(href="/overview/who-we-are", data-title="Who We Are", tabindex="2") Who We Are
+		li
+			h4.three
+				a.ajax(href="/overview/process", data-title="Process", tabindex="3") Process
+		li
+			h4.four
+				a.ajax(href="/overview/resources", data-title="Resources", tabindex="4") Resources
+		li
+			h4
+				a(href="/", tabindex="5") Home
+				
+	div(style="position:absolute; top: 360px; left: 60px;")
+		a.ajax(href="/manual/source-content", data-title="Source Content", data-nav-top="/manual/navigation", data-nav-side="remove") 
+			img(src="/images/manual.png")
+		

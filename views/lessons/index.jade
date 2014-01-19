@@ -1,0 +1,21 @@
+extends ../layout.jade
+
+block main
+	//- Includes happen at compile time, so they can't be passed a variable.
+	//- Need to look for an easier solution, probably in the config or controller.
+	case page
+		when "structure"
+			iframe.video(width="560", height="315", src="//www.youtube.com/embed/MbQpDsP6AzU", frameborder="0", allowfullscreen)
+		when "importance"
+			iframe.video(width="560", height="315", src="//www.youtube.com/embed/2L1yR5NGxOA", frameborder="0", allowfullscreen)
+		when "venn"
+			iframe.video(width="560", height="315", src="//www.youtube.com/embed/LZrLfgVYVNY" frameborder="0" allowfullscreen)
+		when "numerals"
+			iframe.video(width="560", height="315", src="//www.youtube.com/embed/kGEzAMT6I34", frameborder="0", allowfullscreen)
+		when "chart"
+			include chart
+		default
+			include ../404
+			
+block sidebar
+	include navigation

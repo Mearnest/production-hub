@@ -1,0 +1,41 @@
+extends ../layout.jade
+
+block head
+	style.
+		div.sidebar {
+			display: none;
+		}
+		
+	script.
+		$(document).ready(function() {
+			$("div.main").removeClass("col-xs-8");
+			$("div.main").addClass("col-xs-12");
+		});
+
+block topnav
+	include navigation
+
+block main
+	//- Includes happen at compile time, so they can't be passed a variable.
+	//- Need to look for an easier solution, probably in the config or controller.
+	case page
+		when "animation"
+			include animation
+		when "art"
+			include art
+		when "audio"
+			include audio
+		when "layout"
+			include layout
+		when "script"
+			include script
+		when "source-content"
+			include source-content
+		when "storyboard"
+			include storyboard
+		when "video-editing"
+			include video-editing
+		when "visual-brainstorm"
+			include visual-brainstorm
+		default
+			include ../404
